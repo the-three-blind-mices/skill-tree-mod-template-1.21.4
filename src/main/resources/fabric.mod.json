@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "skill-tree-mod",
+	"version": "1.0.0",
+	"name": "Skill Tree Mod",
+	"description": "This mod implements an agility, strength, and charisma skill tree to minecraft",
+	"authors": [
+		"TomCha04, chomalley, and Loaded08998"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/skill-tree-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.the3blindmice.skilltreemod.SkillTreeMod"
+		],
+		"fabric-datagen": [
+			"net.the3blindmice.skilltreemod.SkillTreeModDataGenerator"
+		],
+		"client": [
+			"net.the3blindmice.skilltreemod.SkillTreeModClient"
+		]
+	},
+	"mixins": [
+		"skill-tree-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
